@@ -1,0 +1,106 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus</title>
+
+    <style>
+        table{
+            
+            width:100%;
+            margin-top:20px;
+        }
+        .data{
+            height:800px;
+            width:80%;
+            margin-top:50%;
+            margin-left:10%;
+            margin-top:50px;
+            padding:20px;
+            background-color:lightpink;
+            display:inline-block;
+            text-align:center;
+        }
+        th,td{
+            height:40px;
+            text-align:center;
+            padding:5px;
+        }
+        .form{
+            margin-top:20px;
+        }
+        .form2{
+            margin-top:40px;
+        }
+        input{
+            height:40px;
+            text-indent:20px;
+        }
+        button{
+            padding:10px;
+        }
+        
+    </style>
+    </head>
+    <body>
+        
+                
+            
+    <div class="data">
+        <h1>Buses</h1>
+
+
+        <div class="form">
+            <form onsubmit="addBus(e)">
+                <input type="text" required placeholder="Name" id="name"/>
+                <input type="text" required placeholder="Source" id="source"/>
+                <input type="text"  required placeholder="Destination" id="destination"/>
+                <input type="number" required placeholder="Number" id="number"/>
+                <input type="number"  required placeholder="Passenger Capacity" id="pc" />       
+                 <button type="submit">Add Bus</button>
+            </form>
+        </div>
+
+        <div class="form">
+            <input
+             type="text"
+             placeholder="Search by entering Source"
+             id="searchSource"
+             onkeyup="searchBySource()"
+             />
+          </div>
+         </br></br>
+        <div class="form2">
+          <input
+          type="text"
+          placeholder="Search by entering destination"
+          id="searchDestination"
+          onkeyup="searchByDestination()"      
+          />
+         </div>
+        |<div class="table">
+        <table border="1"  cellspacing=0>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Number</th>
+                    <th>Passenger capacity</th>
+                </tr>
+            </thead>
+            <tbody class="tdata">
+                
+            </tbody>
+        </table>
+     
+       
+    </div>
+</div>
+   
+    
+    <script src="buses.js"></script>
+    
+</body>
+</html>

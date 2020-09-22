@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Names</h1>
+    <div class="form">
+        <input
+         type="text"
+         placeholder="Search by entering Name"
+         id="searchName"
+         onkeyup="searchByName()"
+         />
+      </div>
+    </br></br>
+    <div class="form2">
+      <input
+      type="text"
+      placeholder="Search by entering City"
+      id="searchCity"
+      onkeyup="searchByCity()"      
+      />
+     </div>
+    </br></br>
+
+
+    
+    <table border="1" class="table" cellspacing=0 >
+    
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+        <tbody class="tdata" ></tbody>
+
+</table>
+
+
+   <script src="index.js" ></script>
+</body>
+</html>
